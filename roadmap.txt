@@ -1,0 +1,35 @@
+Graphes d'appel :
+
+* principes :
+
+noeud = function
+arc x y = x appel y
+
+=> mémorisation des noeuds sur l'entrée dans une déclaration de fonction
+=> mémorisation des appels sur la sortie d'un appel de fonction
+
+* cas ECMAScript :
+
+declaration de function : 
+    régle "functionDeclaration" 
+    régle "FunctionExpression"
+
+appel de fonction :
+
+    régle "ArgumentsExpression"
+
+=> TODO : confirmer et étendre avec syntaxe object
+
+GRUN :
+
+se positionner dans le répertoires de build car il s'appuie sur les classes de la grammaire
+
+syntaxe : grun grammar_name top_rule -gui source_file
+
+exemple :
+
+cd /Users/olivier/Workspace/ParserToolkit/Ecmascript/build/classes
+grun ECMAScript program -gui ../../samples/app.js &
+
+ 
+  
